@@ -1,10 +1,10 @@
 # RK3588-YOLO-Defect-Detection
 
-基于RK3588芯片和YOLOv8的PCB缺陷检测系统，针对Orange Pi 5 Plus等RK3588开发板优化。
+基于RK3588芯片和YOLO的PCB缺陷检测系统，针对Orange Pi 5 Plus等RK3588开发板优化。
 
 ## 项目概述
 
-本项目实现了在RK3588平台上部署YOLOv8模型用于PCB电路板缺陷检测，支持以下缺陷类型：
+本项目实现了在RK3588平台上部署YOLO模型用于PCB电路板缺陷检测，支持以下缺陷类型：
 - missing_hole (缺失孔)
 - mouse_bite (鼠咬)
 - open_circuit (开路)
@@ -31,10 +31,10 @@
 
 - 硬件：
   - RK3588芯片的开发板（如Orange Pi 5 Plus）
-  - 设备ID: 8f611d4cc9a75d34（可根据实际设备修改）
+  - 设备ID: （根据实际设备修改）
 
 - 软件：
-  - Python 3.6+
+  - Python 3.8+
   - OpenCV
   - NumPy
   - RKNN Python API
