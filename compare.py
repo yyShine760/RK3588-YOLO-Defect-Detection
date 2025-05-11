@@ -4,18 +4,12 @@ import os
 import time
 import cv2
 import numpy as np
-# 注意：根据您的环境，下面这行可能需要调整
-# 例如，如果安装的是 rknn_toolkit_lite2 包，导入可能是 from rknn_toolkit_lite2.lite import RKNNLite
-from rknnlite.api import RKNNLite # 确认这个导入路径与您的 rknnlite 安装匹配
+from rknnlite.api import RKNNLite
 
-# --- 配置参数 ---
-# RKNN 模型路径 (请根据你的实际路径修改)
 RKNN_FP32_MODEL = r''
 RKNN_W8A8_MODEL = r''
-# 测试图片路径 (请根据你的实际路径修改)
 TEST_IMAGE_PATH = r''
-# 模型输入尺寸 (与你转换模型时设置的一致)
-MODEL_INPUT_SIZE = (640, 640) # (宽度, 高度)
+MODEL_INPUT_SIZE = (640, 640)
 # 推理运行次数 (用于计算平均时间，可适当增加)
 NUM_INFERENCE_RUNS = 20
 # 核心 ID (RK3588 有多个核心, 可以指定运行在哪一个上, -1 表示自动选择)

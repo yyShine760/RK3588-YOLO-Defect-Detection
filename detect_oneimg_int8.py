@@ -20,7 +20,6 @@ NMS_THRESH = 0.45
 IMG_SIZE = 640
 CLASSES = ['missing_hole', 'mouse_bite', 'open_circuit', 'short', 'spur', 'spurious_copper']
 
-# --- 辅助函数 (letterbox, process_output, load_label, draw_boxes 基本保持不变) ---
 
 def letterbox(im, new_shape=(640, 640), color=(114, 114, 114)):
     # Resize and pad image while meeting stride-multiple constraints

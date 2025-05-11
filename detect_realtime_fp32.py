@@ -9,7 +9,7 @@ import psutil
 import threading
 from datetime import datetime
 import json
-import csv  # 添加CSV模块导入
+import csv
 
 RKNN_MODEL = r''
 QUANTIZE_ON = True
@@ -36,7 +36,7 @@ def letterbox(im, new_shape=(640, 640), color=(114, 114, 114)):
     top, bottom = int(round(dh - 0.1)), int(round(dh + 0.1))
     left, right = int(round(dw - 0.1)), int(round(dw + 0.1))
     im = cv2.copyMakeBorder(im, top, bottom, left, right, cv2.BORDER_CONSTANT, value=color)
-    return im, r, (dw, dh)  # 修正这里，将dwdh改为dh
+    return im, r, (dw, dh)
 
 def process_output(output, r, dwdh):
     num_classes = len(CLASSES)
